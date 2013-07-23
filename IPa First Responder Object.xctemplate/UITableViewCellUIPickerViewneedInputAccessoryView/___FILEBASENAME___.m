@@ -36,7 +36,7 @@
 -(UIView*)inputView
 {
     if (inputView == nil) {
-        inputView = [[___VARIABLE_inputView___ alloc] initWithFrame:CGRectZero];
+        inputView = [[UIPickerView alloc] initWithFrame:CGRectZero];
         inputView.delegate = self;
         inputView.dataSource = self;
         [inputView setShowsSelectionIndicator:YES];
