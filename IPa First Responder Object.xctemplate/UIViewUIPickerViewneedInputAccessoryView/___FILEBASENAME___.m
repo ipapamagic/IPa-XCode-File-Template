@@ -73,4 +73,21 @@
     
     
 }
+
+#pragma mark - UIPickerViewDataSource
+
+// returns the number of 'columns' to display.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+#warning input your number of Components
+    return 0;
+}
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+#warning input your number of rows in Component
+    return 0;
+}
+
 @end
