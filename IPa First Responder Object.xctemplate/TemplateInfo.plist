@@ -45,7 +45,11 @@
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
-			<string>text</string>
+			<string>combo</string>
+			<key>Values</key>
+			<array>
+				<string>UIView</string>
+			</array>
 		</dict>
 		<dict>
 			<key>Default</key>
