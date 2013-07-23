@@ -49,6 +49,7 @@
 			<key>Values</key>
 			<array>
 				<string>UIView</string>
+				<string>UITableViewCell</string>
 			</array>
 		</dict>
 		<dict>
