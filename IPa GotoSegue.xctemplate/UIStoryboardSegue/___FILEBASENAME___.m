@@ -39,7 +39,7 @@
     [source.___VARIABLE_containerView___ addSubview:destination.view];
     [destination.view setFrame:(CGRect) {
         .origin = CGPointZero,
-        .size = ___VARIABLE_containerView___.frame.size,
+        .size = source.___VARIABLE_containerView___.frame.size,
     }];
     [destination didMoveToParentViewController:source];
 }
