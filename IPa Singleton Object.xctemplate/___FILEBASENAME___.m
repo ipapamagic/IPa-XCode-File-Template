@@ -13,21 +13,24 @@
 @implementation ___FILEBASENAMEASIDENTIFIER___
 static ___FILEBASENAMEASIDENTIFIER___ *instance;
 + (id)allocWithZone:(NSZone *)zone {
-    @synchronized(self) {
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
         if (instance == nil) {
             instance = [super allocWithZone:zone];
-            return instance;  // assignment and return on first allocation
         }
-    }
-    return nil; // on subsequent allocation attempts return nil
+
+    });
+    return instance
 }
 + (id)getInstance
 {
-    @synchronized(self) {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
         if (instance == nil){
             instance = [[___FILEBASENAMEASIDENTIFIER___ alloc] init];
         }
-    }
+    });
     
     return instance;
 }
