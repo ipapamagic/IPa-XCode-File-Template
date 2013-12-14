@@ -21,7 +21,7 @@ static ___FILEBASENAMEASIDENTIFIER___ *instance;
         }
 
     });
-    return instance
+    return instance;
 }
 + (id)getInstance
 {
