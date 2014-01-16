@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.objective-c-source</string>
+		<string>public.objective-c-plus-plus-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>BaseViewController</string>
+	<key>Description</key>
+	<string>An UIViewController class,  that is a custom container view controller</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.m</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the class to create</string>
+            <key>Default</key>
+			<string>BaseViewController</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+        <dict>
+			<key>Default</key>
+			<string>UIViewController</string>
+			<key>Description</key>
+			<string>What class to subclass in the new file</string>
+			<key>Identifier</key>
+			<string>superclass</string>
+			<key>Name</key>
+			<string>Subclass of</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>combo</string>
+			<key>Values</key>
+			<array>
+				<string>UIViewController</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>currentViewController</string>
+			<key>Description</key>
+			<string>The name of UIViewController variable that contain sub viewController</string>
+			<key>Identifier</key>
+			<string>currentViewController</string>
+			<key>Name</key>
+			<string>Current  View Controller Name</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>containerView</string>
+			<key>Description</key>
+			<string>The name of UIView variable that contain view of sub view controller</string>
+			<key>Identifier</key>
+			<string>containerView</string>
+			<key>Name</key>
+			<string>Container View Name</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+        <dict>
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Use AutoLayout base Navigation Bar control or not</string>
+			<key>Identifier</key>
+			<string>NavigationBar</string>
+			<key>Name</key>
+			<string>Use AutoLayout base Navigation Bar control</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>checkbox</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+		<string>com.apple.platform.macosx</string>
+	</array>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Summary</key>
+	<string>An Objective-C class with a header</string>
+</dict>
+</plist>
