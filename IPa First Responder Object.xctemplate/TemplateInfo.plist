@@ -8,7 +8,7 @@
 		<string>public.objective-c-plus-plus-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>IPaGotoSegue</string>
+	<string>IPaFirstResponder</string>
 	<key>Description</key>
 	<string>Sub class of UIView that you want to become first responder,and has custom inputView and basic Toolbar with done button</string>
 	<key>Kind</key>
@@ -50,6 +50,7 @@
 			<array>
 				<string>UIView</string>
 				<string>UITableViewCell</string>
+				<string>UIButton</string>
 			</array>
 		</dict>
 		<dict>
