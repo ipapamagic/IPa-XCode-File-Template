@@ -4,17 +4,16 @@
 <dict>
 	<key>AllowedTypes</key>
 	<array>
-		<string>public.objective-c-source</string>
-		<string>public.objective-c-plus-plus-source</string>
+		<string>public.swift-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
 	<string>IPaSingletonObject</string>
 	<key>Description</key>
-	<string>An Objective-C class, with implementation basic require of a singleton object</string>
+	<string>Implementation basic require of a singleton object</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.m</string>
+	<string>___FILEBASENAME___.swift</string>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -31,20 +30,6 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
-		<dict>
-			<key>Default</key>
-			<string>NSObject</string>
-			<key>Description</key>
-			<string>What class to subclass in the new file</string>
-			<key>Identifier</key>
-			<string>superclass</string>
-			<key>Name</key>
-			<string>Subclass of</string>
-			<key>Required</key>
-			<string>YES</string>
-			<key>Type</key>
-			<string>text</string>
-		</dict>
 	</array>
 	<key>Platforms</key>
 	<array>
@@ -54,6 +39,6 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Summary</key>
-	<string>An Objective-C class with a header</string>
+	<string>A Singleton Object Class</string>
 </dict>
 </plist>
