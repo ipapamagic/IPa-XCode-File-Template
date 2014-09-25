@@ -2,18 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AllowedTypes</key>
-	<array>
-		<string>public.swift-source</string>
-	</array>
 	<key>DefaultCompletionName</key>
 	<string>IPaSingletonObject</string>
 	<key>Description</key>
-	<string>Implementation basic require of a singleton object</string>
+	<string>An Objective-C class, with implementation basic require of a singleton object</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
-	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.swift</string>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -30,6 +24,44 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
+		<dict>
+			<key>AllowedTypes</key>
+			<dict>
+				<key>Objective-C</key>
+				<array>
+					<string>public.objective-c-source</string>
+					<string>public.objective-c-plus-plus-source</string>
+				</array>
+				<key>Swift</key>
+				<array>
+					<string>public.swift-source</string>
+				</array>
+			</dict>
+			<key>Default</key>
+			<string>Objective-C</string>
+			<key>Description</key>
+			<string>The implementation language</string>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>MainTemplateFiles</key>
+			<dict>
+				<key>Objective-C</key>
+				<string>___FILEBASENAME___.m</string>
+				<key>Swift</key>
+				<string>___FILEBASENAME___.swift</string>
+			</dict>
+			<key>Name</key>
+			<string>Subclass of</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Values</key>
+			<array>
+				<string>Objective-C</string>
+				<string>Swift</string>
+			</array>
+		</dict>
 	</array>
 	<key>Platforms</key>
 	<array>
@@ -39,6 +71,6 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Summary</key>
-	<string>A Singleton Object Class</string>
+	<string>An Objective-C / Swift Singleton Class with a header</string>
 </dict>
 </plist>
