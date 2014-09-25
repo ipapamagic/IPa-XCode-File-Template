@@ -11,5 +11,5 @@
 @interface ___FILEBASENAMEASIDENTIFIER___ : NSObject {
     
 }
-+ (id)getInstance;
++ (id)sharedInstance;
 @end
