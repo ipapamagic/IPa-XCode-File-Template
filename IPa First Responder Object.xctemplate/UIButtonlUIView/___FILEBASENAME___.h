@@ -7,5 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol ___FILEBASENAMEASIDENTIFIER___Delegate
 @interface ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_superclass___
+@property (nonatomic,weak) id <___FILEBASENAMEASIDENTIFIER___Delegate> delegate;
+@end
+
+@protocol ___FILEBASENAMEASIDENTIFIER___Delegate <NSObject>
+
+<#methods#>
+
 @end
