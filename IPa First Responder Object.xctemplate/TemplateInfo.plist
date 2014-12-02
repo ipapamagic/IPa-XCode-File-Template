@@ -74,22 +74,6 @@
 				<string>UIPickerView</string>
 			</array>
 		</dict>
-		<dict>
-			<key>Description</key>
-			<string>do you need input Accessory View</string>
-			<key>Identifier</key>
-			<string>needInputAccessoryView</string>
-			<key>Name</key>
-			<string>Use inputAccessoryView</string>
-			<key>NotPersisted</key>
-			<true/>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Default</key>
-			<string>true</string>
-		</dict>
 	</array>
 	<key>Platforms</key>
 	<array>
