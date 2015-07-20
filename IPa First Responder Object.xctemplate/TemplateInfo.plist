@@ -2,19 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AllowedTypes</key>
-	<array>
-		<string>public.objective-c-source</string>
-		<string>public.objective-c-plus-plus-source</string>
-	</array>
 	<key>DefaultCompletionName</key>
 	<string>IPaFirstResponder</string>
 	<key>Description</key>
 	<string>Sub class of UIView that you want to become first responder,and has custom inputView and basic Toolbar with done button</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
-	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.m</string>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -57,7 +50,7 @@
 			<key>Default</key>
 			<string>UIView</string>
 			<key>Description</key>
-			<string>What class of your iinput view</string>
+			<string>What class of your input view</string>
 			<key>Identifier</key>
 			<string>inputViewClass</string>
 			<key>Name</key>
@@ -72,6 +65,44 @@
 			<array>
 				<string>UIView</string>
 				<string>UIPickerView</string>
+			</array>
+		</dict>
+		<dict>
+			<key>AllowedTypes</key>
+			<dict>
+				<key>Swift</key>
+				<array>
+					<string>public.swift-source</string>
+				</array>
+				<key>Objective-C</key>
+				<array>
+					<string>public.objective-c-source</string>
+					<string>public.objective-c-plus-plus-source</string>
+				</array>
+			</dict>
+			<key>Default</key>
+			<string>Swift</string>
+			<key>Description</key>
+			<string>The implementation language</string>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>MainTemplateFiles</key>
+			<dict>
+				<key>Objective-C</key>
+				<string>___FILEBASENAME___.m</string>
+				<key>Swift</key>
+				<string>___FILEBASENAME___.swift</string>
+			</dict>
+			<key>Name</key>
+			<string>Language Choice</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Values</key>
+			<array>
+				<string>Swift</string>
+				<string>Objective-C</string>
 			</array>
 		</dict>
 	</array>
