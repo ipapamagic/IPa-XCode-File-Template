@@ -2,15 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AllowedTypes</key>
-	<array>
-		<string>public.objective-c-source</string>
-		<string>public.objective-c-plus-plus-source</string>
-	</array>
 	<key>DefaultCompletionName</key>
-	<string>BaseViewController</string>
+	<string>UITableViewCell</string>
 	<key>Description</key>
-	<string>An UIViewController class,  that is a custom container view controller</string>
+	<string>UITableViewCell can input text and delegate to receive input</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
@@ -20,8 +15,8 @@
 		<dict>
 			<key>Description</key>
 			<string>The name of the class to create</string>
-            <key>Default</key>
-			<string>BaseViewController</string>
+			<key>Default</key>
+			<string>InputTableViewCell</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Name</key>
@@ -33,9 +28,9 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
-        <dict>
+		<dict>
 			<key>Default</key>
-			<string>UIViewController</string>
+			<string>UITableViewCell</string>
 			<key>Description</key>
 			<string>What class to subclass in the new file</string>
 			<key>Identifier</key>
@@ -50,50 +45,18 @@
 			<string>combo</string>
 			<key>Values</key>
 			<array>
-				<string>UIViewController</string>
+				<string>UITableViewCell</string>
 			</array>
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>currentViewController</string>
+			<string>false</string>
 			<key>Description</key>
-			<string>The name of UIViewController variable that contain sub viewController</string>
+			<string>Use UITextField or UITextView as input box</string>
 			<key>Identifier</key>
-			<string>currentViewController</string>
+			<string>isMultiline</string>
 			<key>Name</key>
-			<string>Current  View Controller Name</string>
-			<key>NotPersisted</key>
-			<true/>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>text</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>containerView</string>
-			<key>Description</key>
-			<string>The name of UIView variable that contain view of sub view controller</string>
-			<key>Identifier</key>
-			<string>containerView</string>
-			<key>Name</key>
-			<string>Container View Name</string>
-			<key>NotPersisted</key>
-			<true/>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>text</string>
-		</dict>
-        <dict>
-			<key>Default</key>
-			<string>true</string>
-			<key>Description</key>
-			<string>Use AutoLayout base Navigation Bar control or not</string>
-			<key>Identifier</key>
-			<string>NavigationBar</string>
-			<key>Name</key>
-			<string>Use AutoLayout base Navigation Bar control</string>
+			<string>Is Multiline</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -110,6 +73,6 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Summary</key>
-	<string>An Objective-C class with a header</string>
+	<string>UITableViewCell with a UITextField,and delegate to receive input</string>
 </dict>
 </plist>

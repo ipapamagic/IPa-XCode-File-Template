@@ -13,21 +13,22 @@ protocol ___FILEBASENAMEASIDENTIFIER___Delegate {
 }
 
 class ___FILEBASENAMEASIDENTIFIER___ :___VARIABLE_superclass___ {
+    var delegate:___FILEBASENAMEASIDENTIFIER___Delegate!
     lazy var _inputView:___VARIABLE_inputViewClass___ = {
-        var _inputView = ___VARIABLE_inputViewClass___(frame:CGRectZero)
+        var _inputView = ___VARIABLE_inputViewClass___(frame:.zero)
         return _inputView
-    }()
+        }()
     lazy var toolBar:UIToolbar = {
         let toolBar = UIToolbar()
-        toolBar.barStyle = .BlackTranslucent
-        toolBar.autoresizingMask = .FlexibleHeight
+        toolBar.barStyle = .blackTranslucent
+        toolBar.autoresizingMask = .flexibleHeight
         toolBar.sizeToFit()
         var frame = toolBar.frame
         frame.size.height = 44
         toolBar.frame = frame;
-        let doneBtn = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "onDone:")
-        let flexibleSpaceLeft = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
-        let array:[AnyObject] = [flexibleSpaceLeft,doneBtn]
+        let doneBtn = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(___FILEBASENAMEASIDENTIFIER___.onDone(_:)))
+        let flexibleSpaceLeft = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let array = [flexibleSpaceLeft,doneBtn]
         toolBar.items = array
         return toolBar
         }()
@@ -44,20 +45,27 @@ class ___FILEBASENAMEASIDENTIFIER___ :___VARIABLE_superclass___ {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
     }
-    override func canBecomeFirstResponder() -> Bool {
-        return true
+    override var canBecomeFirstResponder: Bool {
+        get {
+            return true
+        }
     }
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)        
-
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        if selected {
+            becomeFirstResponder()
+        }
     }
-    func onTouch(sender:AnyObject) {
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+    }
+    func onTouch(sender:Any) {
         becomeFirstResponder()
     }
-
-    func onDone(sender:AnyObject) {
+    
+    func onDone(_ sender:Any) {
         //MARK:insert your onDone code
         resignFirstResponder()
     }
