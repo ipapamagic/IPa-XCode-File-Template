@@ -1,8 +1,9 @@
 //
-//  ___FILEBASENAME___TableViewCell.swift
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by IPa Chen on 2015/9/22.
-//  Copyright © 2015年 SleepNova. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import UIKit

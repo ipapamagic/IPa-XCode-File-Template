@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>UIVIewController</string>
+	<key>Description</key>
+	<string>create a UIViewControllerRepresentable for SwiftUI</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the view to create</string>
+			<key>Default</key>
+			<string>View</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>View Name</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>UIViewController</string>
+			<key>Description</key>
+			<string>What kind of UIVIewController for present to SwiftUI</string>
+			<key>Identifier</key>
+			<string>uiviewcontroller</string>
+			<key>Name</key>
+			<string>UIViewController</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+		<string>com.apple.platform.macosx</string>
+	</array>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Summary</key>
+	<string>create a UIViewControllerRepresentable for SwiftUI</string>
+</dict>
+</plist>
